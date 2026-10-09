@@ -471,10 +471,10 @@ export default function ProjectsSection({ onOpenProject }: ProjectsSectionProps)
       id="projects"
       className="relative bg-[#0C0C0C] rounded-t-[40px] sm:rounded-t-[50px] md:rounded-t-[60px] -mt-10 sm:-mt-12 md:-mt-14 pt-20 sm:pt-24 md:pt-32 pb-32 px-5 sm:px-8 md:px-10 z-20 select-none"
     >
-      {/* Heading: "Project" (singular) */}
+      {/* Heading: "Projects" */}
       <FadeIn delay={0} y={40} className="w-full text-center mb-16 sm:mb-20 md:mb-28">
         <h2 className="hero-heading font-black uppercase text-center text-[clamp(3rem,12vw,160px)] leading-none tracking-tight font-heading">
-          Project
+          Projects
         </h2>
       </FadeIn>
 
@@ -492,7 +492,7 @@ export default function ProjectsSection({ onOpenProject }: ProjectsSectionProps)
       </div>
 
       {/* Drive Portfolio Works Collection */}
-      <div className="max-w-7xl mx-auto mt-20 pt-16 border-t border-white/10">
+      <div id="video-works" className="max-w-7xl mx-auto mt-20 pt-16 border-t border-white/10 scroll-mt-24">
         <FadeIn delay={0.1} y={20} className="text-center mb-10">
           <span className="text-xs font-semibold uppercase tracking-widest text-[#BBCCD7] font-body">
             Google Drive Portfolio Vault

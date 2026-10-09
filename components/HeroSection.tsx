@@ -27,33 +27,40 @@ export default function HeroSection({ onOpenContact }: HeroSectionProps) {
       >
         <nav
           aria-label="Primary Navigation"
-          className="w-full flex items-center justify-center gap-6 sm:gap-10 md:gap-14 lg:gap-16 text-[#D7E2EA] font-medium uppercase tracking-wider text-sm md:text-base lg:text-[1.25rem]"
+          className="w-full flex items-center justify-center gap-4 sm:gap-7 md:gap-10 lg:gap-12 text-[#D7E2EA] font-medium uppercase tracking-wider text-xs sm:text-sm md:text-base lg:text-[1.15rem]"
         >
           <button
             type="button"
             onClick={() => scrollTo('about')}
-            className="hover:opacity-70 transition-opacity duration-200 cursor-pointer"
+            className="hover:text-white hover:opacity-100 opacity-80 transition-all duration-200 cursor-pointer"
           >
             About
           </button>
           <button
             type="button"
             onClick={() => scrollTo('services')}
-            className="hover:opacity-70 transition-opacity duration-200 cursor-pointer"
+            className="hover:text-white hover:opacity-100 opacity-80 transition-all duration-200 cursor-pointer"
           >
-            Price
+            Services
           </button>
           <button
             type="button"
             onClick={() => scrollTo('projects')}
-            className="hover:opacity-70 transition-opacity duration-200 cursor-pointer"
+            className="hover:text-white hover:opacity-100 opacity-80 transition-all duration-200 cursor-pointer"
           >
             Projects
           </button>
           <button
             type="button"
+            onClick={() => scrollTo('video-works')}
+            className="hover:text-white hover:opacity-100 opacity-80 transition-all duration-200 cursor-pointer"
+          >
+            Works
+          </button>
+          <button
+            type="button"
             onClick={onOpenContact}
-            className="hover:opacity-70 transition-opacity duration-200 cursor-pointer"
+            className="hover:text-white hover:opacity-100 opacity-80 transition-all duration-200 cursor-pointer"
           >
             Contact
           </button>

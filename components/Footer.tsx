@@ -13,7 +13,7 @@ export default function Footer({ onOpenContact }: FooterProps) {
   };
 
   return (
-    <footer className="w-full bg-[#0C0C0C] border-t border-[#D7E2EA]/10 px-6 md:px-12 py-12 text-[#D7E2EA] select-none z-20 relative">
+    <footer id="contact" className="w-full bg-[#0C0C0C] border-t border-[#D7E2EA]/10 px-6 md:px-12 py-12 text-[#D7E2EA] select-none z-20 relative scroll-mt-20">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
         {/* Left: Brand & Statement */}
         <div className="flex flex-col items-center md:items-start text-center md:text-left gap-1">
