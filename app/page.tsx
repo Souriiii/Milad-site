@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
+import Header from '@/components/Header';
 import HeroSection from '@/components/HeroSection';
 import MarqueeSection from '@/components/MarqueeSection';
 import AboutSection from '@/components/AboutSection';
@@ -19,6 +20,9 @@ export default function HomePage() {
       className="relative w-full bg-[#0C0C0C] min-h-screen text-[#D7E2EA]"
       style={{ overflowX: 'clip' }}
     >
+      {/* Sticky Header */}
+      <Header onOpenContact={() => setIsContactOpen(true)} />
+
       {/* 1. Hero Section */}
       <HeroSection onOpenContact={() => setIsContactOpen(true)} />
 

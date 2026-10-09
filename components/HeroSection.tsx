@@ -10,62 +10,10 @@ interface HeroSectionProps {
 }
 
 export default function HeroSection({ onOpenContact }: HeroSectionProps) {
-  const scrollTo = (id: string) => {
-    const el = document.getElementById(id);
-    if (el) {
-      el.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
   return (
     <section className="relative h-screen flex flex-col overflow-x-clip bg-[#0C0C0C] select-none">
-      {/* 1. Navbar */}
-      <FadeIn
-        delay={0}
-        y={-20}
-        className="w-full px-6 md:px-10 pt-6 md:pt-8 z-30"
-      >
-        <nav
-          aria-label="Primary Navigation"
-          className="w-full flex items-center justify-center gap-4 sm:gap-7 md:gap-10 lg:gap-12 text-[#D7E2EA] font-medium uppercase tracking-wider text-xs sm:text-sm md:text-base lg:text-[1.15rem]"
-        >
-          <button
-            type="button"
-            onClick={() => scrollTo('about')}
-            className="hover:text-white hover:opacity-100 opacity-80 transition-all duration-200 cursor-pointer"
-          >
-            About
-          </button>
-          <button
-            type="button"
-            onClick={() => scrollTo('services')}
-            className="hover:text-white hover:opacity-100 opacity-80 transition-all duration-200 cursor-pointer"
-          >
-            Services
-          </button>
-          <button
-            type="button"
-            onClick={() => scrollTo('projects')}
-            className="hover:text-white hover:opacity-100 opacity-80 transition-all duration-200 cursor-pointer"
-          >
-            Projects
-          </button>
-          <button
-            type="button"
-            onClick={() => scrollTo('video-works')}
-            className="hover:text-white hover:opacity-100 opacity-80 transition-all duration-200 cursor-pointer"
-          >
-            Works
-          </button>
-          <button
-            type="button"
-            onClick={onOpenContact}
-            className="hover:text-white hover:opacity-100 opacity-80 transition-all duration-200 cursor-pointer"
-          >
-            Contact
-          </button>
-        </nav>
-      </FadeIn>
+      {/* Top spacer for sticky header */}
+      <div className="w-full h-16 sm:h-20 md:h-24 shrink-0" />
 
       {/* 2. Hero Heading */}
       <div className="w-full overflow-hidden z-0 pointer-events-none mt-6 sm:mt-4 md:-mt-5">
