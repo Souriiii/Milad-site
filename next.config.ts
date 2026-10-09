@@ -55,7 +55,8 @@ const nextConfig: NextConfig = {
       },
     ],
   },
-  output: 'standalone',
+  // Avoid standalone mode on Vercel as it breaks Vercel's serverless and edge routing manifests
+  ...(process.env.BUILD_STANDALONE === 'true' && !process.env.VERCEL ? { output: 'standalone' as const } : {}),
   transpilePackages: ['motion'],
   webpack: (config, {dev}) => {
     // HMR is disabled in AI Studio via DISABLE_HMR env var.
