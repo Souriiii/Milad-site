@@ -1,0 +1,6 @@
+{
+  "name": "Jack -- 3D Creator",
+  "description": "Portfolio landing page for Milad Maghsoudi, a Dubai-based Videographer, Video Editor, and AI Creator.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

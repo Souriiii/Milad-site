@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@layer base {
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  html, body, #root {
+    background-color: #0C0C0C;
+    font-family: var(--font-jakarta), 'Plus Jakarta Sans', sans-serif;
+    color: #D7E2EA;
+    overflow-x: clip;
+  }
+
+  /* Headings and brutalist display elements use Kanit */
+  h1, h2, h3, .font-heading, .font-display {
+    font-family: var(--font-kanit), 'Kanit', sans-serif;
+  }
+
+  /* Body prose and interactive buttons use Plus Jakarta Sans */
+  body, p, span, button, input, select, textarea, .font-body {
+    font-family: var(--font-jakarta), 'Plus Jakarta Sans', sans-serif;
+  }
+}
+
+.hero-heading {
+  font-family: var(--font-kanit), 'Kanit', sans-serif;
+  background: linear-gradient(180deg, #646973 0%, #BBCCD7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

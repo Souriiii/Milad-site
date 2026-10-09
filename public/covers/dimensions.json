@@ -1,0 +1,66 @@
+{
+  "azizi_venice": {
+    "width": 2160,
+    "height": 3840
+  },
+  "binghatti_cullinan": {
+    "width": 1080,
+    "height": 1920
+  },
+  "creek_bay_emaar": {
+    "width": 1080,
+    "height": 1920
+  },
+  "emirates_national_day": {
+    "width": 1068,
+    "height": 1920
+  },
+  "sobha_solis": {
+    "width": 1080,
+    "height": 1920
+  },
+  "the_edit_meraas": {
+    "width": 720,
+    "height": 1280
+  },
+  "titania_binghatti": {
+    "width": 1080,
+    "height": 1920
+  },
+  "difc_luxury": {
+    "width": 1080,
+    "height": 1920
+  },
+  "elina_downtown": {
+    "width": 2160,
+    "height": 3840
+  },
+  "arshia_downtown": {
+    "width": 1080,
+    "height": 1920
+  },
+  "reza_binghatti": {
+    "width": 2160,
+    "height": 3840
+  },
+  "jvc_apartment": {
+    "width": 2160,
+    "height": 3840
+  },
+  "basketball": {
+    "width": 1080,
+    "height": 1920
+  },
+  "gym_fitness": {
+    "width": 1080,
+    "height": 1920
+  },
+  "wedding_wed001": {
+    "width": 1280,
+    "height": 720
+  },
+  "wedding_sahereh": {
+    "width": 1920,
+    "height": 1080
+  }
+}
