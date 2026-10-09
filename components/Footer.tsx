@@ -50,7 +50,7 @@ export default function Footer({ onOpenContact }: FooterProps) {
         {/* Right: Actions */}
         <div className="flex items-center gap-6 text-xs uppercase tracking-widest font-medium">
           <a
-            href="https://drive.google.com/drive/folders/1k1JfMh-jmO_svnMlotdorxNOGJlMSZ2Q?usp=drive_link"
+            href="https://drive.google.com/drive/folders/1qzSqwPhUFSvKmtNHKcFK6VVCZD34Sl9w?usp=drive_link"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-1.5 hover:text-white transition-colors"

@@ -41,7 +41,7 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
     project.driveLink ||
     (project.driveFileId
       ? `https://drive.google.com/file/d/${project.driveFileId}/view?usp=sharing`
-      : 'https://drive.google.com/drive/folders/1k1JfMh-jmO_svnMlotdorxNOGJlMSZ2Q?usp=drive_link');
+      : 'https://drive.google.com/drive/folders/1qzSqwPhUFSvKmtNHKcFK6VVCZD34Sl9w?usp=drive_link');
 
   const isVertical = project.aspectRatio === '9/16';
 

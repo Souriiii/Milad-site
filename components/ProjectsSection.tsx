@@ -12,58 +12,58 @@ export const FEATURED_PROJECTS: ProjectData[] = [
   {
     id: 'project-1',
     number: '01',
-    title: 'Azizi Venice & Emaar Creek',
-    category: 'AI Real Estate · Dubai',
-    client: 'Azizi & Emaar Properties',
-    location: 'Dubai South & Creek Harbour',
-    driveFileId: '1kg_i-0PpGUdcNHrFZjvOqNSlKAP5YY6x', // Azizi Venice.mp4
+    title: 'Emaar Beachfront & O1NE',
+    category: 'Commercial Real Estate · Dubai',
+    client: 'Emaar Properties & O1NE',
+    location: 'Dubai Harbour & Coast',
+    driveFileId: '1hJcgqVu70DJj2nfI6em0ZQfxS_vb5SPP', // Beach Front EMAAR.mp4
     aspectRatio: '9/16',
     driveLink:
-      'https://drive.google.com/drive/folders/14TQX-M94WAG_YduheZ7WBx8MIR36WNTM?usp=drive_link',
+      'https://drive.google.com/drive/folders/10JBuLco9Cx4qEcRPz56xDXP2fDoknhK8?usp=drive_link',
     description:
-      'Flagship architectural video and AI-enhanced campaign film for Azizi Venice and Emaar Creek Bay. Crafted with cinematic camera movement, refined sound design, and photorealistic pacing.',
+      'Flagship commercial film and luxury real estate series for Emaar Beachfront and O1NE developments. High-energy cinematography, precision pacing, and commercial color grading.',
     images: {
-      col1Top: '/covers/creek_bay_emaar.jpg',
-      col1Bottom: '/covers/sobha_solis.jpg',
-      col2: '/covers/azizi_venice.jpg',
+      col1Top: '/covers/emaar_beach.jpg',
+      col1Bottom: '/covers/real_estate_o1ne.jpg',
+      col2: '/covers/beach_front_emaar.jpg',
     },
   },
   {
     id: 'project-2',
     number: '02',
-    title: 'Binghatti Cullinan & DIFC',
-    category: 'Commercial Video · Architecture',
-    client: 'Binghatti Developers & Eivan',
-    location: 'Business Bay & DIFC, Dubai',
-    driveFileId: '1uE0-P5WLC_88Wy68vjaPJnBW7U720tVf', // BINGHATTI-Cullinan-PERSIAN.mp4
+    title: 'Architectural Villa & Estates',
+    category: 'Luxury Villa Architecture',
+    client: 'Private Architectural Estates',
+    location: 'Dubai, UAE',
+    driveFileId: '13HIV_rkAx-X15QHkFga9Yc54WwkKM4qJ', // Villa 02.mp4
     aspectRatio: '9/16',
     driveLink:
-      'https://drive.google.com/drive/folders/1UE6OZ7En1NISdb9INfVkAqeEtYyVcAO4?usp=drive_link',
+      'https://drive.google.com/drive/folders/1mnVdTa0v3b2S8sJRm3M_46Fm4XltFUw1?usp=drive_link',
     description:
-      'High-energy luxury real estate commercial series highlighting Binghatti Cullinan and DIFC residences. Multi-camera videography, dynamic speed ramping, and commercial color grading.',
+      'Ultra-luxury private villa tour and architectural cinematic showcase. Combining 4K vertical social reels and widescreen cinematic exterior tours with smooth stabilized motion.',
     images: {
-      col1Top: '/covers/difc_luxury.jpg',
-      col1Bottom: '/covers/arshia_downtown.jpg',
-      col2: '/covers/binghatti_cullinan.jpg',
+      col1Top: '/covers/villa_showcase.jpg',
+      col1Bottom: '/covers/villa_02.jpg',
+      col2: '/covers/villa_02.jpg',
     },
   },
   {
     id: 'project-3',
     number: '03',
-    title: 'Sports Reel & Wedding Cinema',
-    category: 'Pacing & Narrative Cinema',
-    client: 'Commercial & Private Commissions',
+    title: 'F1 AI Cinema & Meraas',
+    category: 'AI Cinema & Motion Narratives',
+    client: 'Meraas & AI Creative Lab',
     location: 'Dubai & International',
-    driveFileId: '1xmP-AE6v9H_62wztWoEcPCXHGF8aJBmi', // Gym Fitness.mp4
+    driveFileId: '1V4bNzNHapab1FrRN8NzA4gTw-EbuQMaP', // F1.MOV
     aspectRatio: '9/16',
     driveLink:
-      'https://drive.google.com/drive/folders/1WjKpJJjkhu2cRsWSUTaVEpQJDkS0wjlj?usp=drive_link',
+      'https://drive.google.com/drive/folders/1iKX-FzbTAuqwJv0BeRHRoq6QZtdUF9_k?usp=drive_link',
     description:
-      'Dynamic commercial storytelling spanning explosive gym fitness & basketball rhythm reels to emotive luxury wedding cinema (WED-001). Mastered in Adobe Premiere Pro and After Effects.',
+      'High-octane AI Formula 1 cinema concept, Meraas lifestyle commercial cuts, and creative narrative filmmaking. Mastered with dynamic audio mixing and generative motion enhancements.',
     images: {
-      col1Top: '/covers/basketball.jpg',
-      col1Bottom: '/covers/wedding_sahereh.jpg',
-      col2: '/covers/gym_fitness.jpg',
+      col1Top: '/covers/the_edit_meras.jpg',
+      col1Bottom: '/covers/zombie_story_love.jpg',
+      col2: '/covers/f1_ai.jpg',
     },
   },
 ];
@@ -72,7 +72,7 @@ export interface DriveWorkItem {
   id: string;
   title: string;
   folder: string;
-  category: 'ai' | 'real-estate' | 'sports' | 'wedding';
+  category: 'ai' | 'real-estate' | 'sports' | 'commercial' | 'explainer';
   fileId: string;
   type: string;
   tag: string;
@@ -83,231 +83,203 @@ export interface DriveWorkItem {
   resolution: string;
 }
 
-// All individual works from Milad's Google Drive folders with exact native pixel sizes and aspect ratios
+// All individual works from the user's Google Drive folder (1qzSqwPhUFSvKmtNHKcFK6VVCZD34Sl9w)
 export const DRIVE_WORKS: DriveWorkItem[] = [
   {
-    id: 'work-azizi-venice',
-    title: 'Azizi Venice Waterfront',
-    folder: 'AI Real Estate',
+    id: 'work-f1-ai',
+    title: 'F1 Formula One AI Reel',
+    folder: 'AI Video',
     category: 'ai',
-    fileId: '1kg_i-0PpGUdcNHrFZjvOqNSlKAP5YY6x',
-    type: '9:16 Video Reel',
-    tag: '4K Cinema',
-    cover: '/covers/azizi_venice.jpg',
-    width: 2160,
-    height: 3840,
-    aspectRatio: '9/16',
-    resolution: '4K (2160×3840)',
-  },
-  {
-    id: 'work-binghatti-cullinan',
-    title: 'Binghatti Cullinan Official',
-    folder: 'AI Real Estate',
-    category: 'ai',
-    fileId: '1uE0-P5WLC_88Wy68vjaPJnBW7U720tVf',
-    type: '9:16 Commercial Reel',
-    tag: 'Luxury',
-    cover: '/covers/binghatti_cullinan.jpg',
-    width: 1080,
+    fileId: '1V4bNzNHapab1FrRN8NzA4gTw-EbuQMaP',
+    type: '9:16 AI Cinema Reel',
+    tag: 'AI Cinema',
+    cover: '/covers/f1_ai.jpg',
+    width: 1074,
     height: 1920,
     aspectRatio: '9/16',
-    resolution: 'FHD (1080×1920)',
+    resolution: '1074×1920 (9:16)',
   },
   {
-    id: 'work-creek-bay-emaar',
-    title: 'Creek Bay — Emaar Properties',
-    folder: 'AI Real Estate',
+    id: 'work-the-edit-meras',
+    title: 'The Edit — Meraas',
+    folder: 'AI Video',
     category: 'ai',
-    fileId: '1_vvxGu8WocnOygq6UXWLeFNuyG7fn4je',
-    type: '9:16 Architectural Reel',
-    tag: 'Emaar',
-    cover: '/covers/creek_bay_emaar.jpg',
-    width: 1080,
-    height: 1920,
-    aspectRatio: '9/16',
-    resolution: 'FHD (1080×1920)',
-  },
-  {
-    id: 'work-sobha-solis',
-    title: 'Sobha Solis Launch Reel',
-    folder: 'AI Real Estate',
-    category: 'ai',
-    fileId: '1fzvFpASxYqY46OXPhssQvV0MFDdP_tEo',
-    type: '9:16 Social Reel',
-    tag: 'Sobha',
-    cover: '/covers/sobha_solis.jpg',
-    width: 1080,
-    height: 1920,
-    aspectRatio: '9/16',
-    resolution: 'FHD (1080×1920)',
-  },
-  {
-    id: 'work-the-edit-meraas',
-    title: 'The Edit — Meraas Lifestyle',
-    folder: 'AI Real Estate',
-    category: 'ai',
-    fileId: '14lgI9eTEzwNQvvjWhcKiFyxya3HCNU4v',
-    type: '9:16 Commercial Reel',
+    fileId: '1Xz1sIZ6TeeQ7rNcXvdeH937SIJTmMvsI',
+    type: '9:16 Lifestyle Reel',
     tag: 'Meraas',
-    cover: '/covers/the_edit_meraas.jpg',
+    cover: '/covers/the_edit_meras.jpg',
     width: 720,
     height: 1280,
     aspectRatio: '9/16',
     resolution: 'HD (720×1280)',
   },
   {
-    id: 'work-titania-binghatti',
-    title: 'Titania Binghatti Showcase',
-    folder: 'AI Real Estate',
+    id: 'work-zombie-story-love',
+    title: 'Zombie Story Love',
+    folder: 'AI Video',
     category: 'ai',
-    fileId: '11rufe-RewUEiu-bntvRHz6H1g_mpFc-f',
-    type: '9:16 Promo Film',
-    tag: 'Binghatti',
-    cover: '/covers/titania_binghatti.jpg',
-    width: 1080,
-    height: 1920,
-    aspectRatio: '9/16',
-    resolution: 'FHD (1080×1920)',
-  },
-  {
-    id: 'work-emirates-national-day',
-    title: 'Emirates National Day Final',
-    folder: 'AI Real Estate',
-    category: 'ai',
-    fileId: '14XdvM-zI-feE3GRnahe4nqEyEbPKVT6O',
-    type: '9:16 Celebration Film',
-    tag: 'Official',
-    cover: '/covers/emirates_national_day.jpg',
-    width: 1068,
-    height: 1920,
-    aspectRatio: '9/16',
-    resolution: 'Cinema (1068×1920)',
-  },
-  {
-    id: 'work-difc',
-    title: 'DIFC Luxury Living',
-    folder: 'Dubai Real Estate',
-    category: 'real-estate',
-    fileId: '1SBgoxinTYmRUoMgKRTXYqg__1Q9ZgDOq',
-    type: '9:16 Interior & Exterior',
-    tag: 'DIFC',
-    cover: '/covers/difc_luxury.jpg',
-    width: 1080,
-    height: 1920,
-    aspectRatio: '9/16',
-    resolution: 'FHD (1080×1920)',
-  },
-  {
-    id: 'work-elina-downtown',
-    title: 'Elina Downtown Dubai',
-    folder: 'Dubai Real Estate',
-    category: 'real-estate',
-    fileId: '16vdxlKU2ZAd3RFjs0EnJbSL-HTTT8u53',
-    type: '9:16 Commercial Reel',
-    tag: 'Downtown',
-    cover: '/covers/elina_downtown.jpg',
-    width: 2160,
-    height: 3840,
-    aspectRatio: '9/16',
-    resolution: '4K (2160×3840)',
-  },
-  {
-    id: 'work-arshia-downtown',
-    title: 'Arshia Downtown Series',
-    folder: 'Dubai Real Estate',
-    category: 'real-estate',
-    fileId: '15rgxSWGTWW9vqJDJjRWd2cz0x0bCemLE',
-    type: '9:16 Video Reel',
-    tag: 'Commercial',
-    cover: '/covers/arshia_downtown.jpg',
-    width: 1080,
-    height: 1920,
-    aspectRatio: '9/16',
-    resolution: 'FHD (1080×1920)',
-  },
-  {
-    id: 'work-reza-binghatti',
-    title: 'Binghatti Campaign V3',
-    folder: 'Dubai Real Estate',
-    category: 'real-estate',
-    fileId: '1Uh764LJ6hUSM-Ag0YrrWxwBCcPeETk1u',
-    type: '9:16 Campaign Reel',
-    tag: 'Reel',
-    cover: '/covers/reza_binghatti.jpg',
-    width: 2160,
-    height: 3840,
-    aspectRatio: '9/16',
-    resolution: '4K (2160×3840)',
-  },
-  {
-    id: 'work-jvc-apartment',
-    title: 'JVC Luxury Apartment',
-    folder: 'Dubai Real Estate',
-    category: 'real-estate',
-    fileId: '1NCHHkO_Wd0QGTtRjou3DFWe-4gch9KYa',
-    type: '9:16 Interior Reel',
-    tag: 'JVC',
-    cover: '/covers/jvc_apartment.jpg',
-    width: 2160,
-    height: 3840,
-    aspectRatio: '9/16',
-    resolution: '4K (2160×3840)',
-  },
-  {
-    id: 'work-gym-fitness',
-    title: 'Gym & Fitness Commercial',
-    folder: 'Sports & Commercials',
-    category: 'sports',
-    fileId: '1xmP-AE6v9H_62wztWoEcPCXHGF8aJBmi',
-    type: '9:16 Action Reel',
-    tag: 'High Energy',
-    cover: '/covers/gym_fitness.jpg',
-    width: 1080,
-    height: 1920,
-    aspectRatio: '9/16',
-    resolution: 'FHD (1080×1920)',
-  },
-  {
-    id: 'work-basketball',
-    title: 'Basketball Cinematic Reel',
-    folder: 'Sports & Commercials',
-    category: 'sports',
-    fileId: '1spsEz-9MeEX4mpkI4YxBB3YzWIAvH79C',
-    type: '9:16 Sports Reel',
-    tag: 'Fast Cut',
-    cover: '/covers/basketball.jpg',
-    width: 1080,
-    height: 1920,
-    aspectRatio: '9/16',
-    resolution: 'FHD (1080×1920)',
-  },
-  {
-    id: 'work-wedding-wed001',
-    title: 'Wedding Cinema WED-001',
-    folder: 'Wedding Cinema',
-    category: 'wedding',
-    fileId: '1Kv9vKdtMKmbfAhKrxpUCU5x1dTFh1bJN',
-    type: '16:9 Cinematic Film',
-    tag: 'Widescreen',
-    cover: '/covers/wedding_wed001.jpg',
-    width: 1280,
-    height: 720,
-    aspectRatio: '16/9',
-    resolution: '16:9 HD (1280×720)',
-  },
-  {
-    id: 'work-wedding-sahereh',
-    title: 'Sahereh & Vahid Wedding',
-    folder: 'Wedding Cinema',
-    category: 'wedding',
-    fileId: '1TqTy5KD4OqKfivQ8_rNdxjoFlAp8wjdY',
-    type: '16:9 Highlight Film',
-    tag: 'Widescreen',
-    cover: '/covers/wedding_sahereh.jpg',
-    width: 1920,
-    height: 1080,
+    fileId: '1L9zG5dCraWPW8hmDgOPy2ldkK2rzSend',
+    type: '16:9 Cinematic Story',
+    tag: 'AI Narrative',
+    cover: '/covers/zombie_story_love.jpg',
+    width: 1600,
+    height: 900,
     aspectRatio: '16/9',
     resolution: '16:9 FHD (1920×1080)',
+  },
+  {
+    id: 'work-beachfront-emaar',
+    title: 'Beachfront Emaar Dubai',
+    folder: 'Real Estate Commercial',
+    category: 'real-estate',
+    fileId: '1hJcgqVu70DJj2nfI6em0ZQfxS_vb5SPP',
+    type: '9:16 Commercial Reel',
+    tag: 'Emaar',
+    cover: '/covers/beach_front_emaar.jpg',
+    width: 1080,
+    height: 1920,
+    aspectRatio: '9/16',
+    resolution: 'FHD (1080×1920)',
+  },
+  {
+    id: 'work-emaar-beach',
+    title: 'Emaar Beachfront Luxury',
+    folder: 'Real Estate Commercial',
+    category: 'real-estate',
+    fileId: '1AEOb147JlLGwvy6re9rkGNnQ2dp7Inlf',
+    type: '9:16 Architectural Reel',
+    tag: 'Luxury Coast',
+    cover: '/covers/emaar_beach.jpg',
+    width: 1080,
+    height: 1920,
+    aspectRatio: '9/16',
+    resolution: 'FHD (1080×1920)',
+  },
+  {
+    id: 'work-real-estate-o1ne',
+    title: 'Real Estate O1NE Campaign',
+    folder: 'Real Estate Commercial',
+    category: 'real-estate',
+    fileId: '19Qz5xk6X8kP1wgADfx_aNZ3Rbr3uB_k7',
+    type: '9:16 Commercial Reel',
+    tag: 'O1NE',
+    cover: '/covers/real_estate_o1ne.jpg',
+    width: 1080,
+    height: 1920,
+    aspectRatio: '9/16',
+    resolution: 'FHD (1080×1920)',
+  },
+  {
+    id: 'work-villa-02',
+    title: 'Exclusive Villa 02 Tour',
+    folder: 'Real Estate Villa',
+    category: 'real-estate',
+    fileId: '13HIV_rkAx-X15QHkFga9Yc54WwkKM4qJ',
+    type: '4K 9:16 Villa Tour',
+    tag: '4K Villa',
+    cover: '/covers/villa_02.jpg',
+    width: 1080,
+    height: 1920,
+    aspectRatio: '9/16',
+    resolution: '4K UHD (2160×3840)',
+  },
+  {
+    id: 'work-villa-showcase',
+    title: 'Architectural Villa Showcase',
+    folder: 'Real Estate Villa',
+    category: 'real-estate',
+    fileId: '1lQLVfnpD0R8Af7_P3j47-__gGpo8ojBg',
+    type: '16:9 Architecture Film',
+    tag: 'Widescreen',
+    cover: '/covers/villa_showcase.jpg',
+    width: 1600,
+    height: 901,
+    aspectRatio: '16/9',
+    resolution: '3.4K Cinema (3410×1920)',
+  },
+  {
+    id: 'work-basketball-reel',
+    title: 'Basketball Energy Reel',
+    folder: 'Sports & Fitness',
+    category: 'sports',
+    fileId: '1kZbJ-FOKvYmoninkI1nj7umKggtqx1zL',
+    type: '9:16 Sports Reel',
+    tag: 'Action Cut',
+    cover: '/covers/basketball_reel.jpg',
+    width: 1080,
+    height: 1920,
+    aspectRatio: '9/16',
+    resolution: 'FHD (1080×1920)',
+  },
+  {
+    id: 'work-gym-fitness-reel',
+    title: 'Gym & Fitness Commercial',
+    folder: 'Sports & Fitness',
+    category: 'sports',
+    fileId: '1kTUqM6lTuIcvGs7GOUECQlHgym1KU4ZL',
+    type: '9:16 Commercial Reel',
+    tag: 'Fitness',
+    cover: '/covers/gym_fitness_reel.jpg',
+    width: 1080,
+    height: 1920,
+    aspectRatio: '9/16',
+    resolution: 'FHD (1080×1920)',
+  },
+  {
+    id: 'work-patrick-ta-eyes',
+    title: 'Patrick Ta For Eyes',
+    folder: 'Beauty & Makeup',
+    category: 'commercial',
+    fileId: '1zxq_AsW3LmVW6JBJfHD_CZNGcyhAbYqr',
+    type: '9:16 Beauty Commercial',
+    tag: 'Beauty',
+    cover: '/covers/patrick_ta_eyes.jpg',
+    width: 1080,
+    height: 1920,
+    aspectRatio: '9/16',
+    resolution: 'FHD (1080×1920)',
+  },
+  {
+    id: 'work-cold-symptoms',
+    title: 'Cold Symptoms Explainer',
+    folder: 'Healthcare & Medical',
+    category: 'explainer',
+    fileId: '1ozzbhnTc6qAXpKlbR_rdn718KqbkErXA',
+    type: '9:16 Explainer Reel',
+    tag: 'Medical',
+    cover: '/covers/cold_symptoms.jpg',
+    width: 1080,
+    height: 1920,
+    aspectRatio: '9/16',
+    resolution: 'FHD (1080×1920)',
+  },
+  {
+    id: 'work-flu-vaccine',
+    title: 'Flu Vaccine Awareness',
+    folder: 'Healthcare & Medical',
+    category: 'explainer',
+    fileId: '1my4_rg_dMPuPep_AgipZpqXL3_n8XDqN',
+    type: '9:16 Awareness Reel',
+    tag: 'Public Health',
+    cover: '/covers/flu_vaccine.jpg',
+    width: 1080,
+    height: 1920,
+    aspectRatio: '9/16',
+    resolution: 'FHD (1080×1920)',
+  },
+  {
+    id: 'work-flu-overview',
+    title: 'Flu Diagnosis & Care',
+    folder: 'Healthcare & Medical',
+    category: 'explainer',
+    fileId: '1YqZLVDUdm-FfbKg8c_7aev5eISmS7Jv_',
+    type: '9:16 Healthcare Reel',
+    tag: 'Diagnosis',
+    cover: '/covers/flu_overview.jpg',
+    width: 1080,
+    height: 1920,
+    aspectRatio: '9/16',
+    resolution: 'FHD (1080×1920)',
   },
 ];
 
@@ -441,7 +413,9 @@ interface ProjectsSectionProps {
 }
 
 export default function ProjectsSection({ onOpenProject }: ProjectsSectionProps) {
-  const [activeCategory, setActiveCategory] = useState<'all' | 'ai' | 'real-estate' | 'sports' | 'wedding'>('all');
+  const [activeCategory, setActiveCategory] = useState<
+    'all' | 'real-estate' | 'ai' | 'sports' | 'commercial' | 'explainer'
+  >('all');
 
   const filteredWorks =
     activeCategory === 'all'
@@ -508,11 +482,12 @@ export default function ProjectsSection({ onOpenProject }: ProjectsSectionProps)
         {/* Category Tabs */}
         <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-3 mb-12">
           {[
-            { id: 'all', label: 'All Works (16)' },
-            { id: 'ai', label: 'AI Real Estate (9:16)' },
-            { id: 'real-estate', label: 'Dubai Real Estate (9:16)' },
-            { id: 'sports', label: 'Sports & Commercials (9:16)' },
-            { id: 'wedding', label: 'Wedding Cinema (16:9)' },
+            { id: 'all', label: 'All Works (14)' },
+            { id: 'real-estate', label: 'Real Estate & Villas (5)' },
+            { id: 'ai', label: 'AI Video & Cinema (3)' },
+            { id: 'sports', label: 'Sports & Fitness (2)' },
+            { id: 'commercial', label: 'Commercial & Beauty (1)' },
+            { id: 'explainer', label: 'Healthcare & Explainer (3)' },
           ].map((tab) => (
             <button
               key={tab.id}
@@ -529,13 +504,7 @@ export default function ProjectsSection({ onOpenProject }: ProjectsSectionProps)
         </div>
 
         {/* Masonry / Grid layout: Displays videos in their exact native size and aspect ratios */}
-        <div
-          className={
-            activeCategory === 'wedding'
-              ? 'grid grid-cols-1 md:grid-cols-2 gap-6'
-              : 'columns-1 sm:columns-2 lg:columns-3 xl:columns-4 gap-6 space-y-6'
-          }
-        >
+        <div className="columns-1 sm:columns-2 lg:columns-3 xl:columns-4 gap-6 space-y-6">
           {filteredWorks.map((work) => {
             const isVertical = work.aspectRatio === '9/16';
             return (
@@ -555,7 +524,7 @@ export default function ProjectsSection({ onOpenProject }: ProjectsSectionProps)
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, (max-width: 1280px) 33vw, 25vw"
-                    priority={work.id === 'work-azizi-venice' || work.id === 'work-binghatti-cullinan'}
+                    priority={work.id === 'work-f1-ai' || work.id === 'work-beachfront-emaar'}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/25 pointer-events-none" />
                   
@@ -608,7 +577,7 @@ export default function ProjectsSection({ onOpenProject }: ProjectsSectionProps)
         {/* Global Google Drive link button */}
         <div className="mt-14 text-center">
           <a
-            href="https://drive.google.com/drive/folders/1k1JfMh-jmO_svnMlotdorxNOGJlMSZ2Q?usp=drive_link"
+            href="https://drive.google.com/drive/folders/1qzSqwPhUFSvKmtNHKcFK6VVCZD34Sl9w?usp=drive_link"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2.5 px-8 py-4 rounded-full border-2 border-[#D7E2EA] bg-white/[0.04] text-[#D7E2EA] hover:bg-[#D7E2EA] hover:text-[#0C0C0C] font-semibold uppercase tracking-widest text-xs sm:text-sm transition-all duration-300 hover:scale-[1.02]"
