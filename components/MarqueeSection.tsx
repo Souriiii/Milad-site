@@ -197,10 +197,28 @@ export default function MarqueeSection() {
   }, []);
 
   return (
-    <section
+    <motion.section
       ref={sectionRef}
+      initial={{ opacity: 0, y: 50, scale: 0.98 }}
+      whileInView={{ opacity: 1, y: 0, scale: 1 }}
+      viewport={{ once: true, amount: 0.1, margin: '-40px 0px' }}
+      transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
       className="relative bg-[#0C0C0C] pt-20 sm:pt-28 md:pt-36 pb-12 overflow-hidden select-none"
     >
+      {/* Scroll-revealed intro badge */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: '-30px 0px' }}
+        transition={{ duration: 0.7, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
+        className="w-full flex items-center justify-center mb-6 sm:mb-8 px-4"
+      >
+        <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-white/10 bg-white/[0.04] backdrop-blur-md text-[11px] sm:text-xs uppercase tracking-widest text-[#D7E2EA]/70 font-mono shadow-lg">
+          <span className="w-1.5 h-1.5 rounded-full bg-purple-400 animate-pulse" />
+          <span>Continuous Reel Highlights</span>
+        </div>
+      </motion.div>
+
       <div className="flex flex-col gap-4 sm:gap-6">
         {/* Row 1 - Smooth continuous marquee streaming right-to-left */}
         <div className="relative w-full overflow-hidden flex">
@@ -246,6 +264,6 @@ export default function MarqueeSection() {
           </motion.div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }

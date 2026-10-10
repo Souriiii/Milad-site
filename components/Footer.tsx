@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import { motion } from 'motion/react';
 import { ArrowUp, ExternalLink, Mail, Phone, MapPin } from 'lucide-react';
 
 interface FooterProps {
@@ -13,7 +14,14 @@ export default function Footer({ onOpenContact }: FooterProps) {
   };
 
   return (
-    <footer id="contact" className="w-full bg-[#0C0C0C] border-t border-[#D7E2EA]/10 px-6 md:px-12 py-12 text-[#D7E2EA] select-none z-20 relative scroll-mt-20">
+    <motion.footer
+      id="contact"
+      initial={{ opacity: 0, y: 35 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.15, margin: '-20px 0px' }}
+      transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+      className="w-full bg-[#0C0C0C] border-t border-[#D7E2EA]/10 px-6 md:px-12 py-12 text-[#D7E2EA] select-none z-20 relative scroll-mt-20"
+    >
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
         {/* Left: Brand & Statement */}
         <div className="flex flex-col items-center md:items-start text-center md:text-left gap-1">
@@ -80,6 +88,6 @@ export default function Footer({ onOpenContact }: FooterProps) {
         <span>© 2026 Milad Maghsoudi. All rights reserved.</span>
         <span>Crafting striking and unforgettable visual narratives</span>
       </div>
-    </footer>
+    </motion.footer>
   );
 }

@@ -441,16 +441,29 @@ export default function ProjectsSection({ onOpenProject }: ProjectsSectionProps)
   };
 
   return (
-    <section
+    <motion.section
       id="projects"
-      className="relative bg-[#0C0C0C] rounded-t-[40px] sm:rounded-t-[50px] md:rounded-t-[60px] -mt-10 sm:-mt-12 md:-mt-14 pt-20 sm:pt-24 md:pt-32 pb-32 px-5 sm:px-8 md:px-10 z-20 select-none"
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.05, margin: '-50px 0px' }}
+      transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
+      className="relative bg-[#0C0C0C] rounded-t-[40px] sm:rounded-t-[50px] md:rounded-t-[60px] -mt-10 sm:-mt-12 md:-mt-14 pt-20 sm:pt-24 md:pt-32 pb-32 px-5 sm:px-8 md:px-10 z-20 select-none shadow-2xl"
     >
-      {/* Heading: "Projects" */}
-      <FadeIn delay={0} y={40} className="w-full text-center mb-16 sm:mb-20 md:mb-28">
+      {/* Heading: "Projects" with scroll reveal */}
+      <motion.div
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.2 }}
+        transition={{ duration: 0.85, ease: [0.16, 1, 0.3, 1] }}
+        className="w-full text-center mb-16 sm:mb-20 md:mb-28"
+      >
+        <span className="text-xs uppercase tracking-widest font-semibold text-[#D7E2EA]/50 block mb-2 font-mono">
+          Featured Commercial Work
+        </span>
         <h2 className="hero-heading font-black uppercase text-center text-[clamp(3rem,12vw,160px)] leading-none tracking-tight font-heading">
           Projects
         </h2>
-      </FadeIn>
+      </motion.div>
 
       {/* 3 Sticky-stacking project cards */}
       <div className="w-full flex flex-col mb-28">
@@ -467,7 +480,13 @@ export default function ProjectsSection({ onOpenProject }: ProjectsSectionProps)
 
       {/* Drive Portfolio Works Collection */}
       <div id="video-works" className="max-w-7xl mx-auto mt-20 pt-16 border-t border-white/10 scroll-mt-24">
-        <FadeIn delay={0.1} y={20} className="text-center mb-10">
+        <motion.div
+          initial={{ opacity: 0, y: 35 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+          className="text-center mb-10"
+        >
           <span className="text-xs font-semibold uppercase tracking-widest text-[#BBCCD7] font-body">
             Google Drive Portfolio Vault
           </span>
@@ -477,10 +496,16 @@ export default function ProjectsSection({ onOpenProject }: ProjectsSectionProps)
           <p className="text-sm sm:text-base text-[#D7E2EA]/70 max-w-xl mx-auto mt-2 font-body font-light">
             Real video reels and productions from my Google Drive archive. Each preview photo is rendered in its exact native video dimensions and aspect ratio (9:16 vertical reels & 16:9 cinema).
           </p>
-        </FadeIn>
+        </motion.div>
 
         {/* Category Tabs */}
-        <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-3 mb-12">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration: 0.7, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
+          className="flex flex-wrap items-center justify-center gap-2 sm:gap-3 mb-12"
+        >
           {[
             { id: 'all', label: 'All Works (14)' },
             { id: 'real-estate', label: 'Real Estate & Villas (5)' },
@@ -501,15 +526,23 @@ export default function ProjectsSection({ onOpenProject }: ProjectsSectionProps)
               {tab.label}
             </button>
           ))}
-        </div>
+        </motion.div>
 
-        {/* Masonry / Grid layout: Displays videos in their exact native size and aspect ratios */}
+        {/* Masonry / Grid layout: Displays videos with individual scroll reveal animations */}
         <div className="columns-1 sm:columns-2 lg:columns-3 xl:columns-4 gap-6 space-y-6">
-          {filteredWorks.map((work) => {
+          {filteredWorks.map((work, index) => {
             const isVertical = work.aspectRatio === '9/16';
             return (
-              <div
+              <motion.div
                 key={work.id}
+                initial={{ opacity: 0, y: 40, scale: 0.97 }}
+                whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                viewport={{ once: true, amount: 0.15, margin: '-30px 0px' }}
+                transition={{
+                  duration: 0.7,
+                  delay: (index % 4) * 0.08,
+                  ease: [0.16, 1, 0.3, 1],
+                }}
                 onClick={() => openDriveWork(work)}
                 className="break-inside-avoid group relative rounded-3xl border border-white/10 bg-white/[0.03] p-4 hover:bg-white/[0.08] hover:border-white/25 transition-all duration-300 cursor-pointer overflow-hidden flex flex-col justify-between"
               >
@@ -569,13 +602,19 @@ export default function ProjectsSection({ onOpenProject }: ProjectsSectionProps)
                     Drive ↗
                   </span>
                 </div>
-              </div>
+              </motion.div>
             );
           })}
         </div>
 
         {/* Global Google Drive link button */}
-        <div className="mt-14 text-center">
+        <motion.div
+          initial={{ opacity: 0, y: 25, scale: 0.96 }}
+          whileInView={{ opacity: 1, y: 0, scale: 1 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.75, ease: [0.16, 1, 0.3, 1] }}
+          className="mt-14 text-center"
+        >
           <a
             href="https://drive.google.com/drive/folders/1qzSqwPhUFSvKmtNHKcFK6VVCZD34Sl9w?usp=drive_link"
             target="_blank"
@@ -585,8 +624,8 @@ export default function ProjectsSection({ onOpenProject }: ProjectsSectionProps)
             <span>Open Complete Google Drive Vault</span>
             <ExternalLink className="w-4 h-4" />
           </a>
-        </div>
+        </motion.div>
       </div>
-    </section>
+    </motion.section>
   );
 }
