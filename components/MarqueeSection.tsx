@@ -66,13 +66,6 @@ const ROW_1_VIDEOS: MarqueeVideoItem[] = [
 
 const ROW_2_VIDEOS: MarqueeVideoItem[] = [
   {
-    id: 'vid-villa-showcase',
-    title: 'Architectural Villa Showcase',
-    tag: '16:9 Architecture',
-    videoSrc: '/videos/villa_showcase.mp4',
-    poster: '/covers/villa_showcase.jpg',
-  },
-  {
     id: 'vid-emaar-beach',
     title: 'Emaar Beachfront Luxury',
     tag: 'Emaar Coast',

@@ -40,10 +40,10 @@ export const FEATURED_PROJECTS: ProjectData[] = [
     driveLink:
       'https://drive.google.com/drive/folders/1mnVdTa0v3b2S8sJRm3M_46Fm4XltFUw1?usp=drive_link',
     description:
-      'Ultra-luxury private villa tour and architectural cinematic showcase. Combining 4K vertical social reels and widescreen cinematic exterior tours with smooth stabilized motion.',
+      'Ultra-luxury private villa tour and architectural cinematic showcase. Combining 4K vertical social reels and luxury interior walk-throughs with stabilized cinema pacing.',
     images: {
-      col1Top: '/covers/villa_showcase.jpg',
-      col1Bottom: '/covers/villa_02.jpg',
+      col1Top: '/covers/real_estate_o1ne.jpg',
+      col1Bottom: '/covers/emaar_beach.jpg',
       col2: '/covers/villa_02.jpg',
     },
   },
@@ -83,7 +83,7 @@ export interface DriveWorkItem {
   resolution: string;
 }
 
-// All individual works from the user's Google Drive folder (1qzSqwPhUFSvKmtNHKcFK6VVCZD34Sl9w)
+// All individual active works from the user's Google Drive folder (1qzSqwPhUFSvKmtNHKcFK6VVCZD34Sl9w)
 export const DRIVE_WORKS: DriveWorkItem[] = [
   {
     id: 'work-f1-ai',
@@ -182,20 +182,6 @@ export const DRIVE_WORKS: DriveWorkItem[] = [
     height: 1920,
     aspectRatio: '9/16',
     resolution: '4K UHD (2160×3840)',
-  },
-  {
-    id: 'work-villa-showcase',
-    title: 'Architectural Villa Showcase',
-    folder: 'Real Estate Villa',
-    category: 'real-estate',
-    fileId: '1lQLVfnpD0R8Af7_P3j47-__gGpo8ojBg',
-    type: '16:9 Architecture Film',
-    tag: 'Widescreen',
-    cover: '/covers/villa_showcase.jpg',
-    width: 1600,
-    height: 901,
-    aspectRatio: '16/9',
-    resolution: '3.4K Cinema (3410×1920)',
   },
   {
     id: 'work-basketball-reel',
@@ -507,8 +493,8 @@ export default function ProjectsSection({ onOpenProject }: ProjectsSectionProps)
           className="flex flex-wrap items-center justify-center gap-2 sm:gap-3 mb-12"
         >
           {[
-            { id: 'all', label: 'All Works (14)' },
-            { id: 'real-estate', label: 'Real Estate & Villas (5)' },
+            { id: 'all', label: 'All Works (13)' },
+            { id: 'real-estate', label: 'Real Estate & Villas (4)' },
             { id: 'ai', label: 'AI Video & Cinema (3)' },
             { id: 'sports', label: 'Sports & Fitness (2)' },
             { id: 'commercial', label: 'Commercial & Beauty (1)' },
