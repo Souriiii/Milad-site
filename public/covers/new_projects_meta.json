@@ -8,21 +8,21 @@
     "filename": "f1_ai.jpg",
     "client": "Formula 1 & AI Concept",
     "tag": "AI Cinema",
-    "width": 32772,
-    "height": 2055,
-    "aspectRatio": "16/9"
+    "width": 1074,
+    "height": 1920,
+    "aspectRatio": "9/16"
   },
   {
     "id": "the-edit-meras",
-    "title": "The Edit — Meraas",
+    "title": "The Edit \u2014 Meraas",
     "folder": "AI Video",
     "category": "ai",
     "fileId": "1Xz1sIZ6TeeQ7rNcXvdeH937SIJTmMvsI",
     "filename": "the_edit_meras.jpg",
     "client": "Meraas Dubai",
     "tag": "AI Lifestyle",
-    "width": 2,
-    "height": 2053,
+    "width": 720,
+    "height": 1280,
     "aspectRatio": "9/16"
   },
   {
@@ -34,9 +34,35 @@
     "filename": "zombie_story_love.jpg",
     "client": "AI Narrative Cinema",
     "tag": "AI Story",
-    "width": 33798,
-    "height": 2051,
+    "width": 1600,
+    "height": 900,
     "aspectRatio": "16/9"
+  },
+  {
+    "id": "hermes-product",
+    "title": "Herm\u00e8s Luxury Product",
+    "folder": "Beauty & Makeup",
+    "category": "commercial",
+    "fileId": "146BGVH8NYzKtwzcIQ4e8uy7DhTorChpP",
+    "filename": "hermes_product.jpg",
+    "client": "Herm\u00e8s Paris",
+    "tag": "Herm\u00e8s Paris",
+    "width": 1080,
+    "height": 1920,
+    "aspectRatio": "9/16"
+  },
+  {
+    "id": "kerastase-product",
+    "title": "K\u00e9rastase Product Film",
+    "folder": "Beauty & Makeup",
+    "category": "commercial",
+    "fileId": "1rHOf2gESgQqP_CUzabHftrcdrqRAadNQ",
+    "filename": "kerastase_product.jpg",
+    "client": "K\u00e9rastase",
+    "tag": "K\u00e9rastase",
+    "width": 1080,
+    "height": 1920,
+    "aspectRatio": "9/16"
   },
   {
     "id": "patrick-ta-eyes",
@@ -47,48 +73,74 @@
     "filename": "patrick_ta_eyes.jpg",
     "client": "Patrick Ta Beauty",
     "tag": "Beauty",
-    "width": 32772,
-    "height": 2055,
-    "aspectRatio": "16/9"
+    "width": 1080,
+    "height": 1920,
+    "aspectRatio": "9/16"
   },
   {
-    "id": "cold-symptoms",
-    "title": "Cold Symptoms Explainer",
+    "id": "child-immunity",
+    "title": "Child Immunity Guide",
     "folder": "Healthcare & Medical",
     "category": "explainer",
-    "fileId": "1ozzbhnTc6qAXpKlbR_rdn718KqbkErXA",
-    "filename": "cold_symptoms.jpg",
+    "fileId": "1O_XSP_nG2zu--C0SNxr34pqrXol13rEJ",
+    "filename": "child_immunity.jpg",
     "client": "Health & Medical",
-    "tag": "Medical",
-    "width": 32772,
-    "height": 2055,
-    "aspectRatio": "16/9"
+    "tag": "Immunity Health",
+    "width": 1080,
+    "height": 1740,
+    "aspectRatio": "9/16"
   },
   {
-    "id": "flu-vaccine",
-    "title": "Flu Vaccine Awareness",
+    "id": "cold-explainer",
+    "title": "Cold & Viral Care Explainer",
     "folder": "Healthcare & Medical",
     "category": "explainer",
-    "fileId": "1my4_rg_dMPuPep_AgipZpqXL3_n8XDqN",
-    "filename": "flu_vaccine.jpg",
-    "client": "Public Health",
-    "tag": "Awareness",
-    "width": 32772,
-    "height": 2055,
-    "aspectRatio": "16/9"
-  },
-  {
-    "id": "flu-overview",
-    "title": "Flu Diagnosis & Care",
-    "folder": "Healthcare & Medical",
-    "category": "explainer",
-    "fileId": "1YqZLVDUdm-FfbKg8c_7aev5eISmS7Jv_",
-    "filename": "flu_overview.jpg",
+    "fileId": "1Ftd5BvenumEpKzHFDutqSPZUxT797RTR",
+    "filename": "cold_explainer.jpg",
     "client": "Health & Care",
-    "tag": "Explainer",
-    "width": 32772,
-    "height": 2055,
-    "aspectRatio": "16/9"
+    "tag": "Cold & Flu Care",
+    "width": 1080,
+    "height": 1920,
+    "aspectRatio": "9/16"
+  },
+  {
+    "id": "flu-symptoms",
+    "title": "Flu Symptoms Identification",
+    "folder": "Healthcare & Medical",
+    "category": "explainer",
+    "fileId": "1KLtzNoEEYhf1DN0HN54V3_92C42Vm_lv",
+    "filename": "flu_symptoms.jpg",
+    "client": "Clinical Care",
+    "tag": "Clinical Care",
+    "width": 1080,
+    "height": 1920,
+    "aspectRatio": "9/16"
+  },
+  {
+    "id": "flu-vaccination",
+    "title": "Flu Vaccination Campaign",
+    "folder": "Healthcare & Medical",
+    "category": "explainer",
+    "fileId": "1moUftVqmFW_KPOWYvxdOWInWNOrHV-cY",
+    "filename": "flu_vaccination.jpg",
+    "client": "Public Health",
+    "tag": "Public Health",
+    "width": 1080,
+    "height": 1920,
+    "aspectRatio": "9/16"
+  },
+  {
+    "id": "pediatric-sleep",
+    "title": "Pediatric Sleep Health",
+    "folder": "Healthcare & Medical",
+    "category": "explainer",
+    "fileId": "1ywL3IEFOhDE48XHM-ju0uhIddSMVYh19",
+    "filename": "pediatric_sleep.jpg",
+    "client": "Pediatric Care",
+    "tag": "Pediatric Care",
+    "width": 1080,
+    "height": 1920,
+    "aspectRatio": "9/16"
   },
   {
     "id": "beach-front-emaar",
@@ -99,9 +151,9 @@
     "filename": "beach_front_emaar.jpg",
     "client": "Emaar Properties",
     "tag": "Emaar",
-    "width": 32772,
-    "height": 2055,
-    "aspectRatio": "16/9"
+    "width": 1080,
+    "height": 1920,
+    "aspectRatio": "9/16"
   },
   {
     "id": "emaar-beach",
@@ -112,9 +164,9 @@
     "filename": "emaar_beach.jpg",
     "client": "Emaar Properties",
     "tag": "Luxury Coast",
-    "width": 32772,
-    "height": 2055,
-    "aspectRatio": "16/9"
+    "width": 1080,
+    "height": 1920,
+    "aspectRatio": "9/16"
   },
   {
     "id": "real-estate-o1ne",
@@ -125,9 +177,9 @@
     "filename": "real_estate_o1ne.jpg",
     "client": "O1NE Real Estate",
     "tag": "Commercial",
-    "width": 32772,
-    "height": 2055,
-    "aspectRatio": "16/9"
+    "width": 1080,
+    "height": 1920,
+    "aspectRatio": "9/16"
   },
   {
     "id": "villa-02",
@@ -138,9 +190,9 @@
     "filename": "villa_02.jpg",
     "client": "Private Villa Client",
     "tag": "Luxury Villa",
-    "width": 32772,
-    "height": 2055,
-    "aspectRatio": "16/9"
+    "width": 1080,
+    "height": 1920,
+    "aspectRatio": "9/16"
   },
   {
     "id": "basketball-reel",
@@ -151,9 +203,9 @@
     "filename": "basketball_reel.jpg",
     "client": "Athletics & Sports",
     "tag": "Action Cut",
-    "width": 32772,
-    "height": 2055,
-    "aspectRatio": "16/9"
+    "width": 1080,
+    "height": 1920,
+    "aspectRatio": "9/16"
   },
   {
     "id": "gym-fitness-reel",
@@ -164,8 +216,8 @@
     "filename": "gym_fitness_reel.jpg",
     "client": "Fitness Brand",
     "tag": "Power & Rhythm",
-    "width": 32772,
-    "height": 2055,
-    "aspectRatio": "16/9"
+    "width": 1080,
+    "height": 1920,
+    "aspectRatio": "9/16"
   }
 ]
